@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: portfolio-site # or whatever your project name is
+    name: HimanshuProt # or whatever your project name is
     env: python
     buildCommand: |
       pip install -r requirements.txt
