@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: spamroko
+    name: HimanshuProt
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn HimanshuProt.wsgi:application
