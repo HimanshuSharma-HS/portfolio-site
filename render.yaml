@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: spamroko
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn HimanshuProt.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: HimanshuProt.settings
+      - key: PYTHON_VERSION
+        value: 3.11
